@@ -134,7 +134,8 @@ int main()
 		for(i=0;i<MAX_KEY_BT_NUM;i++)
 			if((nKeypadstate & (1<<i)))
 				inkey = i;
-
+		
+		// keypad가 눌렸을 때만 작동
 		if((pastkey != inkey) && (inkey != -1))
 		{
 			num[j] = numpad[inkey];
