@@ -1,3 +1,15 @@
+/*
+	*자동차 후방감지기 만들기
+	
+	*사용 모듈
+	초음파 센서, buzzer, Text LCD
+	
+	*기능적 요구 사항
+	아래 영상과 같은 시스템을 구현하라
+	
+	거리는 cm단위로 T-LCD에 출력
+*/
+
 #include <wiringPi.h>
 #include <wiringPiSPI.h>
 #include <softTone.h>
