@@ -53,7 +53,7 @@ public class SocketServer implements Runnable {
 			Socket client = serverSocket.accept();
 
 			try {                              
-				BufferedReader in = new BufferedReader(new I						nputStreamReader(client.getInputStream()));
+				BufferedReader in = new BufferedReader(new InputStreamReader(client.getInputStream()));
 				String str = in.readLine();
 				int a = Integer.parseInt(str);			
 
