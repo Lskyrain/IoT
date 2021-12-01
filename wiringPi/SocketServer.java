@@ -1,4 +1,3 @@
-
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.ObjectOutputStream;
@@ -124,12 +123,10 @@ public class SocketServer implements Runnable {
 
 			pin_echo;
 
-		
-
 		public ultrasonic(int ECHO, int TRIG, long REJ_START,long REJ_TIME){ //GPIO
 			this.PIN_ECHO=ECHO;
 			this.PIN_TRIG=TRIG;
-			this.REJECTION_START=REJ_START; 							this.REJECTION_TIME=REJ_TIME;
+			this.REJECTION_START=REJ_START; this.REJECTION_TIME=REJ_TIME;
 
 			gpio=GpioFactory.getInstance();// create gpio controller , io.gpio
 
